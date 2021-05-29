@@ -1,0 +1,1 @@
+La siguiente es la documentación para la API de la app WOLA de Focus Mind.

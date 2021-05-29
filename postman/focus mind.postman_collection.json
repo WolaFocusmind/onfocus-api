@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "92fdcbd2-6798-4ee9-b0fa-463bb539e935",
+		"name": "focus mind",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"test\",\r\n    \"username\": \"test\", \r\n    \"password\":\"1q2w3e4r!!\", \r\n    \"country\":\"AR\",\r\n    \"email\":\"test@focusmind.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/student",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear curso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"name\": \"Como ser comunnity manager\",\r\n    \"description\": \"En este curso aprenderás a ser comunnity manager desde cero y dar voz a grandes marcas\",\r\n    \"teacher\": \"5f95dd9215524e449423b471\",\r\n    \"category\": \"5f95dea215524e449423b475\",\r\n    \"modules\": [],\r\n    \"price\": [],\r\n    \"testimonials\": [],\r\n    \"video_intro\": \"76979871\",\r\n    \"featured_image\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAACXCAYAAADtYULJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVHhe7dIxAQAgAAQho3z/kprCmxhowNl24TfRSIhGQjQSopEQjYRoJEQjIRoJ0UiIRkI0EqKREI2EaCREIyEaCdFIiEZCNBKikRCNhGgkRCMhGgnRSIhGQjQSopEQjYRoJEQjIRoJ0UiIRkI0EqKREI2EaCREIyEaCdFIiEZCNBKikRCNhGgkRCMhGgnRSIhGQjQSopEQjYRoJEQjIRoJ0UiIRkI0EqKREI2EaCREIyEaCdFIiEZCNBKikRCNhGgkRCMhGgnRSIhGQjQSopEQjYRoJEQjIRoJ0UiIRkI0EqKREI2EaCREIyEaCdFIiEZCNBKikRCNhGgkRCMhGgnRSIhGQjQSopEQjYRoJEQjIRoJ0UiIRkI0EqKREI2EaCREIyEaCdFIiEZCNBKikRCNhGgkRCMhGgnRSIhGQjQSopEQjYRoJEQjIRoJ0UiIRkI0EqKREI2EaCREIyEaCdFIiEZCNBKikRCNhGgkRCMhGgnRSIhGQjQSopEQjYRoBHYfpeaSryD3ShIAAAAASUVORK5CYII=\",\r\n    \"about_this_course\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam. Duis autem vel eum iriure dolor in hendrerit in vulpu tate velit esse molestie consequat.\",\r\n    \"total_modules\": 0,\r\n    \"total_duration\": 0,\r\n    \"course_details_items\": [\"Ebook con resumen de la clase.\", \"Documento descargable lorem ipsum.\", \"Certificado Oficial\"],\r\n    \"course_target_items\": [\"Ut wisi enim ad minim veniam.\", \"Lorem ipsum dolor\", \"Ut wisi enim ad minim veniam onsectet uer adipiscing.\"]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/courses",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Iniciar sesion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNzQyMDYxOTU3NDY3NGZmOGQ1MmVjOCIsImVtYWlsIjoibHVpc2dhcmNlc2xlb25AZ21haWwuY29tIiwidXNlcm5hbWUiOiJhZG1pbiIsInVzZXJfdHlwZSI6MCwiaWF0IjoxNjAyOTQ3NjU5LCJleHAiOjE2MzQ0ODM2NTl9.3JpJF8hXrPxnmjk3cS4e9gmdbjKgUYVkZSNvERbVSEw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"contrasena\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/login",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cerrar sesion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/logoutSession/5f3ae0491779a9470895009a",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"logoutSession",
+						"5f3ae0491779a9470895009a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear profesor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\": \"Pablo Perez\",\r\n    \"profile_photo\": \"https://randomuser.me/api/portraits/men/18.jpg\",\r\n    \"title\": \"Especialista en Marketing Digital\",\r\n    \"description\":\"Me especializo en Marketin Digital y otras cosas más\",\r\n    \"socials\": {\r\n            \"instagram\" : \"instagram.com\",\r\n            \"twitter\" : \"twitter.com\",\r\n            \"facebook\" : \"facebook\",\r\n            \"linkedin\" : \"linkedin\",\r\n            \"youtube\" : \"youtube\"\r\n        },\r\n    \"courses\": [\"1\", \"2\"],\r\n    \"status\": true,\r\n    \"entity_status\": \"published\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/teacher",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"All\",\r\n    \"real_price\": \"1\",\r\n    \"final_price\": \"1\",\r\n    \"currency\": \"ARS\",\r\n    \"offer_discount\": \"0\",\r\n    \"offer_ends\": \"22-09-2020\",\r\n    \"payment_method\": \"Paypal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/price",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar testimonial",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Marcos Santana\",\r\n    \"testimonials\": \"Un curso muy bueno para quien quiere aprender de verdad\",\r\n    \"profile_picture\": \"https://dummyimage.com/200x200/000/fff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/testimonial",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"testimonial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cambiar contraseña",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmNzQyMDYxOTU3NDY3NGZmOGQ1MmVjOCIsImVtYWlsIjoibHVpc2dhcmNlc2xlb25AZ21haWwuY29tIiwidXNlcm5hbWUiOiJhZG1pbiIsInVzZXJfdHlwZSI6MCwiaWF0IjoxNjAzMjIyNzY1LCJleHAiOjE2MzQ3NTg3NjV9.d0WYZAxI2_9pBtH1hNJGi2IM0HKVBIwZwb1dGBs9d3A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"oldPassword\": \"1q2w3e4r\",\r\n    \"newPassword\": \"1q2w3e4r!!\",\r\n    \"newPasswordConfirm\": \"1q2w3e4r!!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/me/password",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"me",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener mis cursos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1aXNnYXJjZXNsZW9uQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2MDE0ODg4MjEsImV4cCI6MTYzMzAyNDgyMX0.ccGXBB_yCT69B41ezi7Obb9EWQ1pmzD_AJeUjTe8w9M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{API_URL}}/api/courses/me",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"courses",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/api/course",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"course"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

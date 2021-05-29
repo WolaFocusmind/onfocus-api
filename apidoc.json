@@ -1,0 +1,16 @@
+{
+    "name": "WOLA API Documentación",
+    "version": "0.1.0",
+    "description": "apiDoc para WOLA",
+    "title": "WOLA API",
+    "url" : "https://backend-devel.herokuapp.com/api",
+    "template": {
+      "withCompare": false,
+      "withGenerator": true,
+      "forceLanguage": "es"
+    },
+    "header": {
+      "title": "Documentación WOLA API",
+      "filename": "header.md"
+    }
+  }
